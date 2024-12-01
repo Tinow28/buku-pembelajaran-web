@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buku Pembelajaran Web Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Buku Pembelajaran Web Development</h1>
+  </header>
+  <main>
+    <div class="input-group">
+      <label for="already-learned">Apa yang sudah dipelajari?</label>
+      <input type="text" id="already-learned" placeholder="Contoh: Tag HTML">
+    </div>
+    <div class="input-group">
+      <label for="not-learned">Apa yang belum dipelajari?</label>
+      <input type="text" id="not-learned" placeholder="Contoh: Flexbox CSS">
+    </div>
+    <button onclick="submitInput()">Kirim</button>
+
+    <div class="result-group">
+      <h3>Saya Sudah Bisa</h3>
+      <div>
+        <strong>HTML:</strong>
+        <ul id="html-list"></ul>
+      </div>
+      <div>
+        <strong>CSS:</strong>
+        <ul id="css-list"></ul>
+      </div>
+      <div>
+        <strong>JavaScript:</strong>
+        <ul id="js-list"></ul>
+      </div>
+    </div>
+
+    <div class="result-group">
+      <h3>Saya Belum Bisa</h3>
+      <div>
+        <strong>HTML:</strong>
+        <ul id="html-not-list"></ul>
+      </div>
+      <div>
+        <strong>CSS:</strong>
+        <ul id="css-not-list"></ul>
+      </div>
+      <div>
+        <strong>JavaScript:</strong>
+        <ul id="js-not-list"></ul>
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <h3>Progress</h3>
+      <p>HTML:</p>
+      <div class="progress-bar html-progress"><div id="html-progress"></div></div>
+      <p>CSS:</p>
+      <div class="progress-bar css-progress"><div id="css-progress"></div></div>
+      <p>JavaScript:</p>
+      <div class="progress-bar js-progress"><div id="js-progress"></div></div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Buku Pembelajaran Web Development</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
